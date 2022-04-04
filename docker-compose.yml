@@ -1,0 +1,8 @@
+services:
+  fastify_backend:
+
+    mongo:
+      restart: unless-stopped
+      image: mongo
+      ports:
+        - 'mongodb://mongo:27017'
